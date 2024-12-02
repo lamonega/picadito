@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picadito</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Picadito</h3>
+    </header>
+    <main>
+      <h1>Armá tus equipos de fútbol</h1>
+      <div class="container">
+        <div class="formulario">
+          <form action="">
+            <div class="selector-jugadores">
+              <label for="num-jugadores">Número de jugadores por equipo:</label>
+              <select id="num-jugadores" name="num-jugadores">
+                <option value="4">4 jugadores</option>
+                <option value="5">5 jugadores</option>
+                <option value="6">6 jugadores</option>
+                <option value="7">7 jugadores</option>
+              </select>
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="formacion" id="formacion-aleatoria" />
+              <label for="formacion-aleatoria">Formación aleatoria</label>
+            </div>
+            <div class="radio-group">
+              <input
+                type="radio"
+                name="posiciones"
+                id="posiciones-aleatorias"
+              />
+              <label for="posiciones-aleatorias">Posiciones aleatorias</label>
+            </div>
+            <label for="textarea"
+              >Ingresá los nombres de quienes vayan a jugar separado por
+              espacios</label
+            >
+            <textarea name="" id="textarea" cols="30"></textarea>
+            <input id="submit" type="submit" value="Enviar" />
+          </form>
+        </div>
+        <div id="equipo-container"></div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Creado por <a href="https://github.com/lamonega">Laureano Lamonega</a>
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
