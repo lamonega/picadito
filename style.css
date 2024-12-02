@@ -57,11 +57,21 @@ form {
 
 label {
   margin-top: 10px;
-  color: #555;
+  color: #444;
+}
+
+small {
+  color: #888;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
 }
 
 .radio-group {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 10px 0;
 }

@@ -25,20 +25,26 @@
               </select>
             </div>
             <div class="radio-group">
-              <input type="radio" name="formacion" id="formacion-aleatoria" />
-              <label for="formacion-aleatoria">Formación aleatoria</label>
+              <div class="select">
+                <input type="radio" name="formacion" id="formacion-aleatoria" />
+                <label for="formacion-aleatoria">Formación aleatoria</label>
+              </div>           
+              <p><small>Generar una formación aleatoria para tu equipo. Ej: 1-3-2-1.</small></p>
             </div>
             <div class="radio-group">
-              <input
+              <div class="select">
+                <input
                 type="radio"
                 name="posiciones"
                 id="posiciones-aleatorias"
               />
               <label for="posiciones-aleatorias">Posiciones aleatorias</label>
+              </div>   
+              <p><small>Asignar posiciones aleatorias a los miembros de tu equipo. Ej: Laureano: Defensor.</small></p>
             </div>
             <label for="textarea"
-              >Ingresá los nombres de quienes vayan a jugar separado por
-              espacios</label
+              >Ingresá los nombres de quienes vayan a jugar separados por
+              espacios.</label
             >
             <textarea name="" id="textarea" cols="30"></textarea>
             <input id="submit" type="submit" value="Enviar" />
@@ -49,7 +55,7 @@
     </main>
     <footer>
       <p>
-        Creado por <a href="https://github.com/lamonega">Laureano Lamonega</a>
+        Creado por <a href="https://github.com/lamonega" target="_blank">Laureano Lamonega</a>
       </p>
     </footer>
     <script src="main.js"></script>
