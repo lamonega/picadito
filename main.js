@@ -129,6 +129,18 @@ submit.addEventListener("click", (e) => {
   let esFormacionAleatoria = formacionAleatoriaCheckbox.checked;
   let esPosicionesAleatorias = posicionesAleatoriasCheckbox.checked;
 
+  // Validación de cantidad de jugadores
+  if (nombres_array.length < numJugadores * 2) {
+    // Mostrar mensaje de error si no hay suficientes jugadores
+    equipoContainer.innerHTML = `
+      <div class="error-mensaje">
+        <p>No hay suficientes jugadores. Necesitas al menos ${numJugadores * 2} nombres para formar dos equipos de ${numJugadores} jugadores.</p>
+        <p>Actualmente tienes ${nombres_array.length} nombres en total.</p>
+      </div>
+    `;
+    return;
+  }
+
   let equipo1 = nombres_array
     .filter((_, index) => index % 2 === 0)
     .slice(0, numJugadores);
